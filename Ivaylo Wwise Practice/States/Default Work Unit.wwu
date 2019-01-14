@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D8129EDA-0C13-4A11-BFF5-AF83236D3A7D}" SchemaVersion="85">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{D8129EDA-0C13-4A11-BFF5-AF83236D3A7D}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Day_or_Night" ID="{DA1928CA-5231-45BA-8D6C-27F9CAFFBA09}">
+					<ChildrenList>
+						<State Name="None" ID="{8A2283B2-0333-4A5A-AE76-D1D91C2B7E84}"/>
+						<State Name="Afternoon" ID="{B534D686-BB71-4F41-B944-EC79DA81B070}"/>
+						<State Name="Day" ID="{65DEACB4-E9E6-4E23-9836-90221DE4B239}"/>
+						<State Name="Night" ID="{22D3BE1E-3C40-4AEA-8867-B2E1BDD59CFE}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Time_of_the_Day" ID="{9641BDD5-69B6-4059-BDFF-E36D1514504C}">
+					<ChildrenList>
+						<State Name="None" ID="{0BD78224-9E15-4CC7-957F-9BC79BD72AFF}"/>
+						<State Name="Afternoon" ID="{C6C9EDFD-0A18-4660-88AF-3B867366C6E1}"/>
+						<State Name="Day" ID="{2BD5EDB0-D43F-453F-B745-C1B0672F26CB}"/>
+						<State Name="Night" ID="{FD9F6421-F0D9-4014-8B07-0254BF167BDE}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

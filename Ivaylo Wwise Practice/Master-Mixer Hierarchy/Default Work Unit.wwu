@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9E3097F4-3E16-4CD3-9440-C913F32259FB}" SchemaVersion="85">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{9E3097F4-3E16-4CD3-9440-C913F32259FB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{21004A8D-4FC8-4050-9042-743418D02272}" WorkUnitID="{D882E781-8F32-4C51-ADA5-E8C30D57D979}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="Ambience" ID="{339116A4-5753-4AF5-B1E9-A56A037D9CE4}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{21004A8D-4FC8-4050-9042-743418D02272}" WorkUnitID="{D882E781-8F32-4C51-ADA5-E8C30D57D979}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Exterior" ID="{8848B3F6-B7AA-457D-B780-606F60C11A4D}"/>
+						<Bus Name="Interior" ID="{C561C6ED-774D-4A29-B4A2-A94F5F324A23}"/>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Folly" ID="{1F447DF2-2EEA-47BC-868F-80C1A04A7849}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{21004A8D-4FC8-4050-9042-743418D02272}" WorkUnitID="{D882E781-8F32-4C51-ADA5-E8C30D57D979}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="Music" ID="{89241BFF-1E73-406E-8AF1-23E839B5E1BB}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{21004A8D-4FC8-4050-9042-743418D02272}" WorkUnitID="{D882E781-8F32-4C51-ADA5-E8C30D57D979}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Cinematics" ID="{5AAF802B-34DE-4184-8236-F1607E544E14}"/>
+						<Bus Name="In_Game" ID="{7D5D6C0C-049C-424B-B796-A8A88477FB06}"/>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="SFX" ID="{1C1FA1B4-95E0-49CB-A06D-0A183DE5CB9F}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{21004A8D-4FC8-4050-9042-743418D02272}" WorkUnitID="{D882E781-8F32-4C51-ADA5-E8C30D57D979}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Dialogs" ID="{1B90876F-00C7-42CD-9E71-4F2169C45033}"/>
+						<Bus Name="Ono" ID="{00F43EE5-66FE-4A34-98DA-6E6717A4E770}"/>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="VoiceOver" ID="{7E9F20E9-04D6-429D-B9C7-28114555CD9B}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{21004A8D-4FC8-4050-9042-743418D02272}" WorkUnitID="{D882E781-8F32-4C51-ADA5-E8C30D57D979}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

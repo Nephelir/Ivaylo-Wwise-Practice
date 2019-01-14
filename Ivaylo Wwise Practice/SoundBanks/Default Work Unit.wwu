@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B5EA9B42-2BAA-4109-B946-FB7447E91660}" SchemaVersion="85">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{B5EA9B42-2BAA-4109-B946-FB7447E91660}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Misiq_01" ID="{91F4AEAA-5AC2-48DC-80D5-4A91257A4844}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Misiq_02" ID="{ECF47E00-63D2-484D-A31D-D0CD749A41FF}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
