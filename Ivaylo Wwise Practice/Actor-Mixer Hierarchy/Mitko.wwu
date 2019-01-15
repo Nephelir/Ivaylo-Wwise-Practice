@@ -14,12 +14,15 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Exterior" ID="{D384B0A4-3D33-40CE-9002-4A23E8AD9B9D}" ShortID="1050496317">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{15EC2875-4500-42C0-864C-AB6C692BFDCA}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9E3097F4-3E16-4CD3-9440-C913F32259FB}"/>
+									<ObjectRef Name="Exterior" ID="{8848B3F6-B7AA-457D-B780-606F60C11A4D}" WorkUnitID="{9E3097F4-3E16-4CD3-9440-C913F32259FB}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -31,8 +34,136 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9E3097F4-3E16-4CD3-9440-C913F32259FB}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Day_or_Night" ID="{A7758363-3891-4563-BE1A-099FC1300DA2}" WorkUnitID="{52E85159-BCEF-4F43-995F-9881908D992F}"/>
+										</Reference>
 									</ReferenceList>
-									<GroupingInfo/>
+									<ChildrenList>
+										<SwitchContainer Name="Day" ID="{7BA1BE3E-5393-41D9-933D-C4C5F0C662B6}" ShortID="783733610">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{15EC2875-4500-42C0-864C-AB6C692BFDCA}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Day" ID="{BF76F86D-5A01-4D7A-84C1-5EB207B3ABE1}" WorkUnitID="{52E85159-BCEF-4F43-995F-9881908D992F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9E3097F4-3E16-4CD3-9440-C913F32259FB}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Time_of_the_Day" ID="{76117250-F877-4CE1-9338-E248330F164B}" WorkUnitID="{52E85159-BCEF-4F43-995F-9881908D992F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="City_Day" ID="{B12B10A2-956F-4EBE-8885-CFBE68F8EABD}" ShortID="393559787">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsZeroLantency" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{15EC2875-4500-42C0-864C-AB6C692BFDCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Exterior" ID="{8848B3F6-B7AA-457D-B780-606F60C11A4D}" WorkUnitID="{9E3097F4-3E16-4CD3-9440-C913F32259FB}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="07_ City, Medium" ID="{5CBEB458-043E-4FDE-B97C-AFE78EEC47BB}" ShortID="879429059">
+															<Language>SFX</Language>
+															<AudioFile>07. City, Medium.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="07_ City, Medium" ID="{5CBEB458-043E-4FDE-B97C-AFE78EEC47BB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="City_Day" ID="{B12B10A2-956F-4EBE-8885-CFBE68F8EABD}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="Night" ID="{3DEE632C-0F6C-4A0C-84EE-934632BCF65E}" ShortID="869196799">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{15EC2875-4500-42C0-864C-AB6C692BFDCA}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Night" ID="{C14B2406-36E4-4DCA-BBE3-F3E9D39717CE}" WorkUnitID="{52E85159-BCEF-4F43-995F-9881908D992F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9E3097F4-3E16-4CD3-9440-C913F32259FB}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Time_of_the_Day" ID="{76117250-F877-4CE1-9338-E248330F164B}" WorkUnitID="{52E85159-BCEF-4F43-995F-9881908D992F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="City_Night" ID="{04D1B35E-D18A-43D9-8848-DDE17A7B9E79}" ShortID="428929185">
+													<PropertyList>
+														<Property Name="IsStreamingEnabled" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsZeroLantency" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{15EC2875-4500-42C0-864C-AB6C692BFDCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Exterior" ID="{8848B3F6-B7AA-457D-B780-606F60C11A4D}" WorkUnitID="{9E3097F4-3E16-4CD3-9440-C913F32259FB}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="City`s Night ambience sounds" ID="{B54A6522-E64A-412C-BC4D-B69DFB04860E}" ShortID="417589162">
+															<Language>SFX</Language>
+															<AudioFile>City`s Night ambience sounds.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="City`s Night ambience sounds" ID="{B54A6522-E64A-412C-BC4D-B69DFB04860E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="City_Night" ID="{04D1B35E-D18A-43D9-8848-DDE17A7B9E79}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Night" ID="{3DEE632C-0F6C-4A0C-84EE-934632BCF65E}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Day" ID="{7BA1BE3E-5393-41D9-933D-C4C5F0C662B6}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
 						</ActorMixer>
